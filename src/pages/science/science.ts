@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { DetailPage } from '../detail/detail';
+
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
@@ -30,5 +32,8 @@ import 'rxjs/add/operator/map';
   ionViewDidLoad() {
     console.log('ionViewDidLoad SciencePage');
   }
-
+  
+  viewItem(item){
+    this.navCtrl.push(DetailPage, {item:item});
+  }
 }
