@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 @IonicPage()
 @Component({
   selector: 'page-popular',
-  templateUrl: 'popular.html',
+  templateUrl: 'popular.html'
 })
 export class PopularPage {
   popnews : any = 0;
